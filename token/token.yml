@@ -1,0 +1,20 @@
+name: "cbt"
+sourceurl: https://github.com/fffinlove/cbt/
+supportedstandards: ["NEP-17"]
+safemethods: ["balanceOf", "decimals", "symbol", "totalSupply"]
+events:
+  - name: Transfer
+    parameters:
+      - name: from
+        type: Hash160
+      - name: to
+        type: Hash160
+      - name: amount
+        type: Integer
+permissions: 
+  - methods: ["onNEP17Payment","transfer","mint"]
+  #- methods: ["onNEP17Payment","mint","transfer"]
+    #- hash: 0x43d0f4943b1ee558af2ae4089a3dbea2f88e9661 
+    #methods: ["mint"]
+    #- hash: 0xafb59b5e661131b5797ea9e10976d3e9d7e32f9e
+    #methods: ["mint"]

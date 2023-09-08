@@ -1,0 +1,6 @@
+card/*.json
+card/*.nef
+hero/*.nef
+hero/*.json
+token/*.json
+token/*.nef
